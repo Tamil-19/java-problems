@@ -1,0 +1,25 @@
+class Main{
+public int isPrime(int input1)
+{
+ int n=10;
+        int count =0;
+        for(int i=1;i<=n;i++)  //checks for input no.of.times divisible and return as count value
+        {
+            if(input1%i==0)
+            {
+                count++;
+            }
+        }
+        if(count<=2)             //count less than or equal to prime
+        {
+            return 2;
+        }
+        else if(input1>10 && count<2) //no greater than 10 then check for this statement
+        {
+            return 2;
+        }
+        else{
+            return 1;                //else it is not a prime
+        }
+}
+}
