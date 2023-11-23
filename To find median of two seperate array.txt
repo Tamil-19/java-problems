@@ -1,0 +1,39 @@
+To find median of two seperate arrays
+ 
+public static void main(String[] args) {
+		 int [] arr1 = {1,2,3,4};
+		 int [] arr2 = {2,4,5,6};
+		 int i =arr1.length;
+			int j=arr2.length;
+			int k =i+j;
+		 int[] arrx =new int [k];       //merging two array length to create a new array size
+			
+		 int n =0;
+		 int m =0;
+			for(int l =0;l<arrx.length;l++)
+			{
+			if (l<i)
+				{
+				
+				
+				arrx[l] = arr1[l];
+				
+				}
+			
+			else 
+				{
+					
+				
+				arrx[l] = arr2[l-i];
+				
+				}
+				//System.out.println(l);
+			}
+			int z = arrx.length/2;
+			for(int y:arrx){
+			System.out.print(arrx[y]);
+			}
+			System.out.println("");
+			System.out.println(arrx[z]);
+		 
+	   }
