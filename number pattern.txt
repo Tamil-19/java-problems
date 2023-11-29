@@ -1,0 +1,36 @@
+public class MyClass {
+    static void sam(int n)
+    {
+        int x =1;
+        for(int i=1;i<=n;i++)
+        {
+            for(int j =i;j<=n;j++)
+            {
+                
+                System.out.print(x);
+               // x++;
+                 if( j<n)
+                {
+                    System.out.print(" ");
+                }
+                x++;
+                
+            }
+            x =x-1;
+             System.out.println("");
+            for(int k=1;k<=i;k++)
+            {
+            
+            System.out.print("  ");
+            }
+           
+           
+        }
+        
+        
+        
+    }
+    public static void main(String args[]) {
+     sam(5);
+    }
+}
