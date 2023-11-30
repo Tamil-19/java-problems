@@ -2,13 +2,13 @@ public class MyClass {
     static void sam(int n)
     {
         int x =1;
-        for(int i=1;i<=n;i++)
+        for(int i=1;i<=n;i++)          //loop iterate for n lines
         {
-            for(int j =i;j<=n;j++)
+            for(int j =i;j<=n;j++)        //print  row for the values
             {
                 
-                System.out.print(x);
-               // x++;
+                System.out.print(x);         
+            
                  if( j<n)
                 {
                     System.out.print(" ");
@@ -16,9 +16,9 @@ public class MyClass {
                 x++;
                 
             }
-            x =x-1;
+            x =x-1;                        //every time the value is incremented 1 up so we have to sub
              System.out.println("");
-            for(int k=1;k<=i;k++)
+            for(int k=1;k<=i;k++)          //for spaces
             {
             
             System.out.print("  ");
@@ -34,3 +34,11 @@ public class MyClass {
      sam(5);
     }
 }
+
+
+output:
+1 2 3 4 5
+  5 6 7 8
+    8 9 10
+      10 11
+         11
